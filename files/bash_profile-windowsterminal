@@ -3,5 +3,3 @@
 if [[ $PWD == /mnt/c/Users* ]]; then
   cd $HOME
 fi
-
-#cd $HOME

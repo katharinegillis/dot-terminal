@@ -1,5 +1,5 @@
 # katharinegillis/windowsterminal
-Just a bunch of dotfiles.
+Install Windows Terminal.
 
 ## Install
 Clone and symlink or install with [ellipsis][ellipsis]:

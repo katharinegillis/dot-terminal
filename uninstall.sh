@@ -1,3 +1,9 @@
 #!/usr/bin/env bash
 
-choco.exe uninstall microsoft-windows-terminal -y
+SYSTEM=$3
+
+if [ "$SYSTEM" == "wsl" ]; then
+    choco.exe uninstall microsoft-windows-terminal -y
+else
+    echo -e "\e[33mWindows Terminal is only installable on Windows platforms, nothing to uninstall."
+fi

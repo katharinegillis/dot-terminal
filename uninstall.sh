@@ -4,6 +4,8 @@ SYSTEM=$3
 
 if [ "$SYSTEM" == "wsl" ]; then
     choco.exe uninstall microsoft-windows-terminal -y
+elif [ "$SYSTEM" == "mac" ]; then
+    brew uninstall --cask iterm2
 else
-    echo -e "\e[33mWindows Terminal is only installable on Windows platforms, nothing to uninstall."
+    echo -e "\e[33mNo terminal was installed for Ubuntu."
 fi

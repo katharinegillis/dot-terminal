@@ -11,6 +11,8 @@ if [ "$SYSTEM" == "wsl" ]; then
     TERMINAL_PATH=${TERMINAL_PATH%$'\r'}
 
     cp "$PKG_PATH/configs/settings.json" "$TERMINAL_PATH"
+elif [ "$SYSTEM" == "mac" ]; then
+    brew install --cask iterm2
 else
-    echo -e "\e[33mWindows Terminal is only installable on Windows platforms."
+    echo -e "\e[33mNo terminal to install for Ubuntu."
 fi
